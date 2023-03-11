@@ -11,9 +11,6 @@ struct Stackvector1Cell: View {
                 .scaledToFit()
                 .background(RoundedCorners(topLeft: 25.0, topRight: 25.0, bottomLeft: 25.0,
                                            bottomRight: 25.0))
-                .onTapGesture {
-                    vectorClick?()
-                }
             Text(StringConstants.kLbl3)
                 .font(FontScheme.kPoppinsBold(size: getRelativeHeight(30.0)))
                 .fontWeight(.bold)

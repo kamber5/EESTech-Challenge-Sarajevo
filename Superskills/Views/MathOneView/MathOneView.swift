@@ -1,7 +1,6 @@
 import SwiftUI
 
 struct MathOneView: View {
-    @StateObject var mathOneViewModel = MathOneViewModel()
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var body: some View {
         VStack {

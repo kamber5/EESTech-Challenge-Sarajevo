@@ -1,7 +1,6 @@
 import SwiftUI
 
 struct HamburgerMenuView: View {
-    @StateObject var hamburgerMenuViewModel = HamburgerMenuViewModel()
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var body: some View {
         VStack {

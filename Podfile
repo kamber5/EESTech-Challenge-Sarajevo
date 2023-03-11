@@ -11,6 +11,4 @@ post_install do |installer|
 target 'Superskills' do
   use_frameworks!
 	pod 'Alamofire'
-
-	pod 'GoogleSignIn'
 end
