@@ -1,34 +1,35 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:myapp/utils.dart';
-import 'package:myapp/page-1/splash-page.dart';
-// import 'package:myapp/page-1/login-page.dart';
-// import 'package:myapp/page-1/main-page.dart';
-// import 'package:myapp/page-1/pick-objective.dart';
-// import 'package:myapp/page-1/math.dart';
-// import 'package:myapp/page-1/math-6cD.dart';
-// import 'package:myapp/page-1/math-2.dart';
-// import 'package:myapp/page-1/hamburger-menu.dart';
+import 'package:flutter/services.dart';
 
-void main() => runApp(MyApp());
+import 'core/app_export.dart';
+
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+  ]).then((value) {
+    Logger.init(kReleaseMode ? LogMode.live : LogMode.debug);
+    runApp(MyApp());
+  });
+}
 
 class MyApp extends StatelessWidget {
-	@override
-	Widget build(BuildContext context) {
-	return MaterialApp(
-		title: 'Flutter',
-		debugShowCheckedModeBanner: false,
-		scrollBehavior: MyCustomScrollBehavior(),
-		theme: ThemeData(
-		primarySwatch: Colors.blue,
-		),
-		home: Scaffold(
-		body: SingleChildScrollView(
-			child: Scene(),
-		),
-		),
-	);
-	}
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        visualDensity: VisualDensity.standard,
+      ),
+      translations: AppLocalization(),
+      locale: Get.deviceLocale, //for setting localization strings
+      fallbackLocale: Locale('en', 'US'),
+      title: 'kamber5_s_application1',
+      initialBinding: InitialBindings(),
+      initialRoute: AppRoutes.initialRoute,
+      getPages: AppRoutes.pages,
+    );
+  }
 }
