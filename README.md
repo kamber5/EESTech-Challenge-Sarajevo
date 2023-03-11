@@ -1,64 +1,16 @@
-### Prerequisites
+# test
 
-- Xcode 12.0
-- Swift 5
-- Platform iOS 13+
-- Cocoapods-1.10.1
-- macOS Catalina Version 10.15.4 or later
+A new Flutter project.
 
-### After Download
-- Install Cocoapods `pod install`
-- Open `ProjectName.xcworkspace`
+## Getting Started
 
-### App Navigation
-Check your app's UI from the AppNavigation screens of your app.
+This project is a starting point for a Flutter application.
 
-### Figma design guideline for better accuracy
-Read our guidelines to increase the accuracy of design conversion to code by optimizing Figma designs. 
-https://docs.dhiwise.com/docs/Designguidelines/intro.
+A few resources to get you started if this is your first Flutter project:
 
-### Libraries
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-1. Alamofire : For REST API call
-https://github.com/Alamofire/Alamofire
-
-
-### Project Structure
-```
-├── Superskills.xcodeproj  - it lets you create and modify Xcode projects from Ruby.      
-│ 
-├── Superskills            - Application components folder
-│ ├── Application       - Application configuration files
-│ ├── Assets.xcassets   - Assets of application (ex. images, logo)
-│ ├── Constants         - Application constant files
-│ │   ├── AppConstants  - Application oriented constants (ex. serverURL)
-│ │   ├── StringScheme  - String constants
-│ │   ├── ColorConstants - Color constants
-│ │   └── FontScheme    - Font Scheme constants
-│ ├── Views             - Application's UI View files
-│ │   ├── Cell	        - Folder for UI View of cells in Views
-│ │   │   └── ViewCell.swift - UIView with mapped model value of cell
-│ │   ├── viewModel.swift    - Generated model file for the appropriate view.
-│ │   └── view.swift    - Generated swiftui  
-│ ├── Services          - REST API services folder
-│ │   ├── APIManager.swift  - File with API calling functions
-│ │   └── APIService.swift  - API related functions and methods
-│ ├── Resources         - Application Resources (ex. fonts, libraries, splash screen)
-│ │   └── Fonts         - application's font files
-│ ├── Extensions        - iOS Extension Function Files
-│ ├── Utilities         - Common classes for application (ex. Utilities)
-│ │   └── Utilities.swift - Helper public functions (ex. alert functions)
-│ ├── CustomViews       - external component library classes folder
-│ ├── Models            - Models for REST APIs
-│ ├── Helper            - Helper classes for application (ex. Viewport, ActivityLoader etc.)
-│ └── Info.plist        - Permissions and application configuration file
-└── Podfile             - Specification that describes the dependencies of the targets of one or more projects
-```
-
-### Fonts
-We were enable to find following Fonts, Please add manually to ```Resources/Fonts```
-
-```
-Poppins-Regular
-Poppins-Bold
-Poppins-Light```
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
