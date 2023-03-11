@@ -1,0 +1,36 @@
+import UIKit
+
+struct StringConstants {
+    static let k: String = ""
+    static let kMsgLoginWithGoog: String = "Login with Google"
+    static let kLblPlayGame: String = "PLAY GAME"
+    static let kMsgPickYourSubje: String = "Pick your subject"
+    static let kLblEnglish: String = "English"
+    static let kLbl2: String = "2"
+    static let kLbl3: String = "3"
+    static let kLbl4: String = "4"
+    static let kLblLeaderboard: String = "Leaderboard"
+    static let kLbl7: String = "7"
+    static let kLblHome: String = "Home"
+    static let kLblFour: String = "Four"
+    static let kLblParent: String = "Parent"
+    static let kLblLogOut: String = "Log Out"
+    static let kHttpFail: String = "HTTP request failed"
+    static let kLblSix: String = "Six"
+    static let kUnableToFetch: String = "Unable to fetch data"
+    static let kLblUser2395: String = "User #2395"
+    static let kLblHowMuchIs42: String = "How much is 4-2"
+    static let kLblMath: String = "Math"
+    static let kMsgHowIsNumber2: String = "How is number 2 pronounced"
+    static let kLblHowMuchIs22: String = "How much is 2+2"
+    static let kLblAchievements: String = "Achievements"
+    static let kLblSettings: String = "Settings"
+    static let kLblVersion10: String = "Version 1.0"
+    static let kMsgLoginWithAppl: String = "Login with Apple"
+    static let kLblLevel32: String = "Level: 32"
+    static let kLblThree: String = "Three"
+    static let kLblSoon: String = "Soon"
+    static let kLblTwo: String = "Two"
+    static let kInvalidUrl: String = "Invalid URL"
+    static let kLblBosnian: String = "Bosnian"
+}
